@@ -1,0 +1,23 @@
+{
+  "Applicants": [
+    {
+      "id": 1,
+      "pan": "AAFNZ2078H,",
+      "city": "Pune,",
+      "fullName": "Ajay Sharma,",
+      "email": "applicant@pixel6.co",
+      "mobileNo": 9455566777,
+      "OTP": "1234"
+    },
+    {
+      "city": "pune",
+      "pan": "EEMPK6758H",
+      "fullName": "SHubham",
+      "email": "Shunhal@gmail",
+      "date": "2021-11-11",
+      "mobileNo": "+917684358949",
+      "OTP": "",
+      "id": 2
+    }
+  ]
+}

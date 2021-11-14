@@ -1,0 +1,35 @@
+<ng-container  >
+    <div class="container">
+        <div class="card">
+            <div class="applicants">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>City</th>
+                            <th>Pan No</th>
+                            <th>Full Name</th>
+                            <th>Email-id</th>
+                            <th>Mobile No</th>
+                            <th>OTP</th>
+                            <th>Action</th>
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let Applicant of Applicants">
+                            <td>{{Applicant.id}}</td>
+                            <td style="width: 10%;">{{Applicant.city}}</td>
+                            <td style="width: 15%;">{{Applicant.pan}}</td>
+                            <td style="width: 20%;">{{Applicant.fullName}}</td>
+                            <td style="width: 20%;">{{Applicant.email}}</td>
+                            <td style="width: 15%;">{{Applicant.mobileNo}}</td>
+                            <td style="width: 10%;">{{Applicant.OTP}}</td>
+                            <td style="width: 10%;"><span (click)="deleteApplicant(Applicant.id)" style="color: red;" >Delete</span></td>
+                           
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>

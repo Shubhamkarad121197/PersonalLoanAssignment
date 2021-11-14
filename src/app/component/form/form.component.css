@@ -1,0 +1,27 @@
+.container{
+    
+    margin-top: 5%;
+    width: 80%;
+    
+
+}
+.card{
+    background-color: lightgray;
+    
+    border: 1px solid black;
+    
+}
+.row{
+    padding: auto;
+    margin: auto;
+}
+button{
+    margin: 3%;
+    width: 90%;
+}
+span{
+    color: red;
+}
+.otp button{
+    margin-top: 20%;
+}

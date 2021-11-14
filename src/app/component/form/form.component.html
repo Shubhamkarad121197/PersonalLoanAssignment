@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="card">
+      
+      <form  [formGroup]="loanApplicationForm" (ngSubmit)="UserInfo()">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="city" class="form-label" >City</label>
+            <input type="text" class="form-control" [(ngModel)]="Mycity"  placeholder=" Enter Your City" formControlName="city" >
+            <span *ngIf="city && city.invalid"> *required</span>
+            
+          </div>
+          <div class="col-md-6">
+            <label for="pan" class="form-label">PAN NO.</label>
+            <input type="text" class="form-control" [(ngModel)]="Mypan" placeholder=" Enter Pan No"   formControlName="pan">
+            <span *ngIf="pan && pan.invalid">*required and maxlength is 10</span>
+          </div>
+          <div class="col-md-12">
+            <label for="fullName" class="form-label" >Full Name</label>
+            <input type="text" class="form-control" [(ngModel)]="MyfullName" placeholder="Enter Your Full Name " formControlName="fullName">
+            <span *ngIf="fullName && fullName.invalid">*required and maxLength is 140 character</span>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label" >Email Id</label>
+            <input type="email" class="form-control"  [(ngModel)]="Myemail" placeholder="Enter Your Email-id" formControlName="email">
+            <span *ngIf="email && email.invalid">*required @ and max Length is 255 character</span>
+          </div>
+          <div class="col-md-6">
+            <label for="date" class="form-label" >Date</label>
+            <input type="date"  class="form-control" [(ngModel)]="Mydate" placeholder="select date"   formControlName="date">
+            <span *ngIf="date && date.invalid"> *required</span>
+            
+            
+          </div>
+          <div class="col-md-5">
+            <label for="mobileNo" class="form-label">Mobile No</label>
+            <input type="text" class="form-control" [(ngModel)]="MymobileNo" placeholder="Enter Your Mobile no"   formControlName="mobileNo">
+            <span *ngIf="mobileNo && mobileNo.invalid"> *Mobile no 10 character only</span>
+
+          </div>
+          <div class="col-md-4">
+            <label for="OTP" class="form-label" >OTP</label>
+            <input type="text" class="form-control" [(ngModel)]="MyOtp" placeholder="Enter OTP here"   formControlName="OTP">
+            <span *ngIf="OTP && OTP.invalid"> *Enter Valid OTP</span>
+          </div>
+          <div class="col-md-3 otp">
+          
+          <button class="btn btn-primary" (click)="Otp()">Genarate OTP</button>
+          
+          </div>
+          <div class="col-md-3">
+            <button  class="btn  btn-primary " routerLink="/ApplicantData" type="button"  >Submit</button>
+          </div>
+        </div>
+         
+          
+            
+    </form>
+  </div>
+    
+        
+</div>
